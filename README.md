@@ -26,7 +26,7 @@ Here is a brief overview of tools utilized in completing this project
 
 `Python` as the main programming language used to analyse and also write the etl pipeline.
 
-`SQL` as the main query lanhuage to run queries against the Sparkify Database.
+`SQL` as the main query language to run queries against the Sparkify Database.
 
 `Jupyter Notebook` used as the initial enviroment to read, analyse and write out logic of the etl.
 
@@ -36,7 +36,7 @@ Here is a brief overview of tools utilized in completing this project
 ## ETL
 
 ### Database Schema Design
-The data modeling technique adopted for the Sparkify schema is the Star Schema which is a dimensional modeling. The purpose is to optimize the database for faster retrieval of data, which suit our the goal of the project. The Schema consists of one `Fact Table` which is the songplays tabe and dimension table(dim_users, dim_songs, dim_artists and dim_time).
+The data modeling technique adopted for the Sparkify schema is the Star Schema which is a dimensional modeling. The purpose is to optimize the database for faster retrieval of data, which suit our the goal of the project. The Schema consists of one `Fact Table` which is the songplays table and fourdimension tables(dim_users, dim_songs, dim_artists and dim_time).
 
 Below is the Star Schema Design
 
