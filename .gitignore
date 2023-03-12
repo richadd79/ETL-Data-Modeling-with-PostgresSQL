@@ -1,0 +1,11 @@
+# Python
+__pycache__
+
+# logs
+logs/*
+*.log
+
+# logs
+plugins*
+
+.ipynb_checkpoints
