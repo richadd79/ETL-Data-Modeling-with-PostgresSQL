@@ -46,11 +46,21 @@ Below is the Star Schema Design
 ### Data Pipeline
  With are data in two local directories and based on the designed Schema, the etl pipeline is built. The ETL pipeline reads the json-formatted data(`song_data` and `log_data`) from the directories, processes and loads them into corresponding tables in the Spakify Database in PostgreSQL. The ELT completely run using Python and SQL.
  
-
-
-
+ How To Run The ETL Pipeline
+ 
+      # Run the sql_queries first to create the database and tables in Postgres
+         python sql_queries.py
+         
+      # Run the etl.py to process and load the data to respective tables in the database.
+         python etl.py
+      
 
 ## Resources
+[Psycopg](https://www.psycopg.org/docs/)
+
+[PostgreSQL Tutorial](https://www.postgresqltutorial.com/)
+
+[Pandas Docs](https://pandas.pydata.org/pandas-docs/stable/)
 
 
 
