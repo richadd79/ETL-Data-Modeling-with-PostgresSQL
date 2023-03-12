@@ -36,7 +36,17 @@ Here is a brief overview of tools utilized in completing this project
 ## ETL
 
 ### Database Schema Design
-### Pipeline
+The data modeling technique adopted for the Sparkify schema is the Star Schema which is a dimensional modeling. The purpose is to optimize the database for faster retrieval of data, which suit our the goal of the project. The Schema consists of one `Fact Table` which is the songplays tabe and dimension table(dim_users, dim_songs, dim_artists and dim_time).
+
+Below is the Star Schema Design
+
+![SparkifyDB Schema Design](https://user-images.githubusercontent.com/24456790/224547926-0af1253c-ec1e-4032-8482-ebc6cafd05cc.png)
+
+
+### Data Pipeline
+ With are data in two local directories and based on the designed Schema, the etl pipeline is built. The ETL pipeline reads the json-formatted data(`song_data` and `log_data`) from the directories, processes and loads them into corresponding tables in the Spakify Database in PostgreSQL. The ELT completely run using Python and SQL.
+ 
+
 
 
 
