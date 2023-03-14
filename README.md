@@ -1,15 +1,15 @@
 # ETL Data Modeling with Postgres
 
 ## Introduction
-This project demonstrates the concept of data modeling with PostgreSQL, which reinforces the basis for building an ETL data pipeline uising Python.
+This project demonstrates the concept of data modeling with PostgreSQL, which forms the basis for building an ETL data pipeline using Python.
 A startup wants to analyse the data collected on songs and user activity on their new music streaming app. The collected data resides in a directory of JSON formatted files. The analytics team is particularly interested in understanding what songs users are listening to based on the data.
 
 As a data engineer tasked to create a Postgres database with tables designed to optimize queries on song play analysis.
 
- Goals for this project are:
+ Here are goals for this project:
  1. Create a database schema
  2. Create an ETL pipeline for the analysis
- 2. Test the created database and ETL pipeline running sample queries given by the anayltics team.
+ 2. Test the created database and ETL pipeline by running sample queries given by the anayltics team.
 
 
 ## The Data Sets
@@ -26,9 +26,9 @@ Here is a brief overview of tools utilized in completing this project
 
 `Python` as the main programming language used to analyze and also write the etl pipeline.
 
-`SQL` as the main query language to run queries against the Sparkify Database.
+`SQL` as the main query language to construct queries to run against the Database.
 
-`Jupyter Notebook` used as the initial environment to read, analyze and write out logic of the etl.
+`Jupyter Notebook` used as the initial environment to read, analyze and write out the logic for the etl.
 
 `VSCode IDE` as my preferred IDE to work with, was used to run the `etl.py`
 
@@ -44,7 +44,7 @@ Below is the Star Schema Design
 
 
 ### Data Pipeline
- With are data in two local directories and based on the designed Schema, the etl pipeline is built. The ETL pipeline reads the json-formatted data(`song_data` and `log_data`) from the directories, processes and loads them into corresponding tables in the Spakify Database in PostgreSQL. The ETL is completely run using Python and SQL.
+ With the data in two local directories and based on the designed Schema, the etl pipeline is built. The ETL pipeline reads the json-formatted data(`song_data` and `log_data`) from the directories, processes and loads them into corresponding tables in the Spakify Database in PostgreSQL. The ETL is completely run using Python and SQL.
  
  How To Run The ETL Pipeline
  
@@ -61,6 +61,4 @@ Below is the Star Schema Design
 [PostgreSQL Tutorial](https://www.postgresqltutorial.com/)
 
 [Pandas Docs](https://pandas.pydata.org/pandas-docs/stable/)
-
-
 
